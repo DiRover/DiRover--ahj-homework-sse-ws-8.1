@@ -1,0 +1,21 @@
+.container {
+    flex-grow: 1;
+    overflow-y: auto;
+    height: 400px;
+    width: 400px;
+    border: 1px solid black;
+    margin: auto;
+};
+
+.msg {
+    display: flex;
+};
+
+.icon {
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border: 1px solid black;
+    margin: 0;
+};
