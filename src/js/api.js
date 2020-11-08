@@ -9,11 +9,18 @@ export default class API {
         return new EventSource(this.url);
     }
 
-    load(evt) {
-        const data = JSON.parse(evt.data).field[0];
+    load(evt) { //метод для загрузки сообщений
+        const data = JSON.parse(evt.data).field[0]; //получаем данные из ответа сервера
         const elem = document.createElement('div');
         elem.setAttribute('class', 'msg');
-        elem.innerHTML = `<div class="icon"></div><p>${data.msg}</p>`;
+        if (data.type === 'freekick') {
+            elem.innerHTML = `<span>&#10071 &#10071</span><span>${data.msg}</span>`;
+        } else if (data.type === 'goal') {
+            elem.innerHTML = `<span>&#9917</span><span>${data.msg}</span>`;
+        } else {
+            elem.innerHTML = `<span></span><p>${data.msg}</p>`;
+        }
+        container.scrollBy(0, 9999999); //прокручиваем страницу до последнего сообщения 
         container.appendChild(elem);
     }
 }
