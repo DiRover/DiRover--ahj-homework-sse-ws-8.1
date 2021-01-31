@@ -1,4 +1,4 @@
 import './css/style.css';
 import './index.html';
-import './js/app.js';
+import './js/app';
 import './img/football.png';
