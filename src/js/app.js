@@ -1,3 +1,5 @@
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable import/no-cycle */
 import API from './api';
 
 console.log('ok');
@@ -8,9 +10,9 @@ const api = new API(url);
 
 const eventSource = api.getEventSource();
 eventSource.addEventListener('message', api.load);
-eventSource.addEventListener('open', (evt) => {
+eventSource.addEventListener('open', () => {
   console.log('connected');
 });
-eventSource.addEventListener('error', (evt) => {
+eventSource.addEventListener('error', () => {
   console.log('error');
 });
