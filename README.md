@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/3t29iw9y4edn4cbn?svg=true)](https://ci.appveyor.com/project/DiRover/ahs-homework-dom-2-3)
+[![Build status](https://ci.appveyor.com/api/projects/status/smv4o6lga56uwnob?svg=true)](https://ci.appveyor.com/project/DiRover/ahj-homework-sse-ws-8-1)
 
 
-[PAGE](https://dirover.github.io/ahs-homework-dom-2.1/)
+[PAGE](https://dirover.github.io/ahj-homework-sse-ws-8.1/)
