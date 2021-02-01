@@ -5,7 +5,7 @@ import API from './api';
 console.log('ok');
 
 export const container = document.querySelector('[data-id="container"]');
-const url = 'http://localhost:7871/sse';
+const url = 'https://sse-8-1-server.herokuapp.com/'; // const url = 'http://localhost:7871/sse';
 const api = new API(url);
 
 const eventSource = api.getEventSource();
